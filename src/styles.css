@@ -1,28 +1,39 @@
-
-.Header{
-    background-color: skyblue;
+body{
     margin: 0;
-    padding: 0;
 }
-.Button{
+.Header{
+    font-size: 100%;
+    background-color: rgb(99, 6, 60);
+}
+.Title h2, .Title h3{
+    background: rgb(138, 8, 84);
+    padding-left: 1rem;
+    margin: 0;
+}
+.navButton{
     display: inline-flex;
     vertical-align: middle;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:8px;
+    padding-right:8px;
 }
-.Button:hover {
-    background-color: rgba(127, 200, 229, 0.758);
-    color: white;
+.navButton:hover {
+    background: rgb(138, 8, 84);
+    color: rgb(218, 191, 191);
     cursor: pointer;
 }
-.Body{
-margin-right: 35%;
-}   
-.Title h2{
-    margin:0;
-    padding:0;
+/*Responsive text large screen => small screen*/
+@media (min-width: 1100px) {
+    .bodyText{
+        font-size: 100%;
+        margin-left: 1rem;
+        margin-right: 50%;
+        text-align: justify;
+    }
 }
-.Title h3{
-    margin: 0;
-    padding: 0;
+@media (max-width: 810px){
+    .bodyText{
+        font-size: 100%;
+        margin-left: 1rem;
+        margin-right: 5%;
+    }   
 }
