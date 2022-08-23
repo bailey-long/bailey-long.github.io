@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bailey Long: LOGS</title>
+    <link href="/src/styles.css" rel="stylesheet">
+    <link href="/src/nav.css" rel="stylesheet">
+    <link href="/src/game/game.css" rel="stylesheet">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="game.js"></script>
+</head>
+<body>
+    <div class="Title">
+        <h2>Bailey Long</h2>
+        <h3>NMIT Bachelor of IT</h3>
+    </div>
+    <div class="navBar">
+        <a href="/src/index/index.html"><div class="navButton"><h3>Home</h3></div></a>
+        <a href="/src/about/about.html"><div class="navButton"><h3>About</h3></div></a>
+        <a href="/src/contact/contact.html"><div class="navButton"><h3>Contact</h3></div></a>
+        <a href="/src/hobbies/hobbies.html"><div class="navButton"><h3>Hobbies</h3></div></a>
+        <div class="navButton" id="active"><h3>Top Secret</h3></div>
+        <div class="navButton"><a href="https://github.com/bailey-long" target="_blank"><img alt="githubLogo" src="/public/GitHub_Logo_White.png"></a></div>
+    </div>
+
+    <!--Game Content-->
+    <div class="content">
+        <div class="menus">
+
+
+        <div class="main">
+            <button id="chop">Chop Log</button>
+            <button id="mineStone">Mine Stone</button>
+            <button id="visit">Visit Marketplace</button>
+        </div>
+
+        <div class="marketPlace">
+            <div class="sellButtons">
+                <button id="sell1">sell [1] log</button>
+                <button id="sell10">sell [10] logs</button>
+                <button id="sellAll">sell ALL logs</button>
+            </div>
+
+            <div class="items">
+                <button id="buyPickaxe">Buy [1] Pickaxe: $50</button>
+
+            </div>
+                <div class="upgrades">
+                    <button id="autoChopper">Buy [1] autoChopper: $100</button>
+                </div>
+
+                <button id="return">Return</button>
+            </div>
+        </div>
+
+        <div class="inventory">
+            <p id="money">Money: $0</p>
+            <p id="logs">Logs: 0 logs</p>
+            <P id="pickaxes">Pickaxes: none</p>
+            <p id="stone">Stone: 0</p>
+        </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.Title h2, .Title h3{
+    font-family: inherit;
+    color: #fefefe;
+    background: rgb(138, 8, 84);
+    margin: 0;
+}
+.navBar{
+    display: flex;
+    background-color: rgb(99, 6, 60);
+}
+.navBar a{
+    color: inherit;  /*blue colors for links too */
+    text-decoration: inherit; /*no underline */
+}
+.navButton{
+    color: #fefefe;
+    margin: 0;
+    font-size: 100%;
+    display: inline-flex;
+    padding-left:8px;
+    padding-right:8px;
+}
+.navButton:hover {
+    background: rgb(138, 8, 84);
+    color: black;
+    cursor: pointer;
+}
+.navBar img{
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+}
+#active {
+    background: rgb(138, 8, 84);
+    color: yellow;
+}
+/*Responsive navbar to small screens*/
+@media (max-width: 810px){
+    .navBar{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(99, 6, 60);
+        box-shadow: 0px 15px rgb(138, 8, 84);
+    }
+    .navButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .navButton:hover {
+        width: 100vw;
+        background: rgb(138, 8, 84);
+        color: black;
+        cursor: pointer;
+    }
+    #active{
+        display: none;
+    }
+    .navBar img{
+        width: 120px;
+        height: 40px;
+        margin-top: 10px;
+    }
+}

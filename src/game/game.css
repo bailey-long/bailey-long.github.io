@@ -1,0 +1,26 @@
+.content{
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+.marketPlace{
+    display: none;
+}
+.sellButtons{
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    margin-bottom: 10px;
+}
+.upgrades, .items{
+    display: grid;
+    grid-template-columns: repeat(3, 125px);
+    margin-bottom: 10px;
+}
+.inventory{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+button{
+    background-color: white;
+    font-size: 18px;
+}

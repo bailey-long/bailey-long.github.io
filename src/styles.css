@@ -1,38 +1,7 @@
 body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
-}
-.Title h2, .Title h3{
-    color: #fefefe;
-    background: rgb(138, 8, 84);
-    margin: 0;
-}
-.navBar{
-    display: flex;
-    background-color: rgb(99, 6, 60);
-}
-.navBar a{
-    color: inherit;  /*blue colors for links too */
-    text-decoration: inherit; /*no underline */
-}
-.navButton{
-    color: #fefefe;
-    margin: 0;
-    font-size: 100%;
-    display: inline-flex;
-    padding-left:8px;
-    padding-right:8px;
-}
-.navButton:hover {
-    background: rgb(138, 8, 84);
-    color: black;
-    cursor: pointer;
-}
-.navBar img{
-    margin-top: 10px;
-}
-#active {
-    background: rgb(138, 8, 84);
-    color: yellow;
+    background-image: url("/public/nature.jpg");
 }
 /*Responsive text large screen => small screen*/
 @media (min-width: 1100px) {
