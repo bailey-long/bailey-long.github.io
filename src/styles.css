@@ -1,0 +1,28 @@
+
+.Header{
+    background-color: skyblue;
+    margin: 0;
+    padding: 0;
+}
+.Button{
+    display: inline-flex;
+    vertical-align: middle;
+    padding-left:10px;
+    padding-right:10px;
+}
+.Button:hover {
+    background-color: rgba(127, 200, 229, 0.758);
+    color: white;
+    cursor: pointer;
+}
+.Body{
+margin-right: 35%;
+}   
+.Title h2{
+    margin:0;
+    padding:0;
+}
+.Title h3{
+    margin: 0;
+    padding: 0;
+}
