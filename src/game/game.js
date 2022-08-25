@@ -2,7 +2,7 @@ $(document).ready(function(){
     var logs = 0;
     var stone = 0;
     var pickaxes = 0;
-    var money = 0
+    var money = 0;
     var logPlus = 1;
     var stonePlus = 1;
     var autoLogPlus = 0;

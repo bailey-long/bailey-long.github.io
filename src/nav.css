@@ -1,8 +1,11 @@
+.Title{
+    border-bottom: 2px solid black;
+    background: rgb(138, 8, 84);
+}
 .Title h2, .Title h3{
+    margin: 0;
     font-family: inherit;
     color: #fefefe;
-    background: rgb(138, 8, 84);
-    margin: 0;
 }
 .navBar{
     display: flex;
