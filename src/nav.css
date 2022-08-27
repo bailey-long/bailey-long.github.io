@@ -1,4 +1,6 @@
 .Title{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     border-bottom: 2px solid black;
     background: rgb(138, 8, 84);
 }
@@ -6,6 +8,42 @@
     margin: 0;
     font-family: inherit;
     color: #fefefe;
+}
+.Title img{
+    margin-top: 5px;
+    justify-self: end;
+    width: 120px;
+    height: 40px;
+}
+.Title h2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.navimg1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+.navimg2{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+.navimg3{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+.navimg4{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 5;
 }
 .navBar{
     display: flex;
@@ -25,7 +63,7 @@
 }
 .navButton:hover {
     background: rgb(138, 8, 84);
-    color: black;
+    color: yellow;
     cursor: pointer;
 }
 .navBar img{
@@ -39,6 +77,9 @@
 }
 /*Responsive navbar to small screens*/
 @media (max-width: 810px){
+    .Title img{
+        display: none;
+    }
     .navBar{
         overflow-x: hidden;
         display: flex;
