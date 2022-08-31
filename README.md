@@ -1,2 +1,1 @@
-# Portfolio_website
-Personal portfolio website
+# Portfolio_website for Web503 Assessment 2
