@@ -12,10 +12,10 @@ body{
         text-align: justify;
     }
 }
-@media (max-width: 810px){
+@media (max-width: 750px){
     .bodyText{
         font-size: 100%;
         margin-left: 1rem;
-        margin-right: 5%;
+        margin-right: 1rem;
     }   
 }

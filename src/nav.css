@@ -2,8 +2,10 @@
     display: none;
 }
 .Title{
+    overflow: hidden;
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto max-content 90px 90px 90px 90px;
+    align-items: center;
     border-bottom: 2px solid black;
     background: rgb(138, 8, 84);
 }
@@ -18,36 +20,41 @@
     height: 40px;
 }
 .Title h2{
-    grid-column-start: 1;
-    grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
-/*TODO rename all .navimage to .titleimage and update the html classes to match*/
-.navimg1{
-    justify-self: end;
+.Title h3{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 2;
     grid-column-end: 2;
 }
-.navimg2{
+/*TODO rename all .navimage to .titleimage and update the html classes to match*/
+.navimg1{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 3;
     grid-column-end: 3;
 }
-.navimg3{
+.navimg2{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 4;
     grid-column-end: 4;
 }
-.navimg4{
+.navimg3{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 5;
     grid-column-end: 5;
+}
+.navimg4{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 6;
+    grid-column-end: 6;
 }
 .navBar{
     display: flex;
@@ -80,9 +87,12 @@
     color: yellow;
 }
 /*Responsive navbar to small screens*/
-@media (max-width: 810px){
-    .Title img{
+@media (max-width: 700px){
+    .Title img, .Title h3{
         display: none;
+    }
+    .Title{
+        grid-template-columns: auto;
     }
     .openclosenav{
         display: grid;
@@ -106,7 +116,7 @@
     .navButton:hover {
         width: 100vw;
         background: rgb(138, 8, 84);
-        color: black;
+        color: yellow;
         cursor: pointer;
     }
     #active{
