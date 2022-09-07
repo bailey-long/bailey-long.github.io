@@ -4,7 +4,7 @@
 .Title{
     overflow: hidden;
     display: grid;
-    grid-template-columns: auto max-content 90px 90px 90px 90px;
+    grid-template-columns: auto max-content 90px 90px 90px 90px 100px;
     align-items: center;
     border-bottom: 2px solid black;
     background: rgb(138, 8, 84);
@@ -55,6 +55,12 @@
     grid-row-end: 1;
     grid-column-start: 6;
     grid-column-end: 6;
+}
+.navimg5{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 7;
+    grid-column-end: 7;
 }
 .navBar{
     display: flex;
