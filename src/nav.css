@@ -6,15 +6,14 @@
     display: grid;
     grid-template-columns: auto max-content 90px 90px 90px 90px 100px;
     align-items: center;
-    border-bottom: 2px solid black;
-    background: rgb(138, 8, 84);
+    background: rgb(64, 156, 213);
 }
 .Title h2, .Title h3{
     margin: 0;
     font-family: inherit;
     color: #fefefe;
 }
-.Title img{
+.Title #icon{
     margin-top: 5px;
     width: 120px;
     height: 40px;
@@ -30,6 +29,10 @@
     grid-row-end: 1;
     grid-column-start: 2;
     grid-column-end: 2;
+}
+.navDropdown{
+    /*Hide nav dropdown by default*/
+    display: none;
 }
 /*TODO rename all .navimage to .titleimage and update the html classes to match*/
 .navimg1{
@@ -64,7 +67,7 @@
 }
 .navBar{
     display: flex;
-    background-color: rgb(99, 6, 60);
+    background-color: rgb(0, 0, 0);
 }
 .navBar a{
     color: inherit;  /*blue colors for links too */
@@ -79,7 +82,7 @@
     padding-right:8px;
 }
 .navButton:hover {
-    background: rgb(138, 8, 84);
+    background: rgb(64, 156, 213);
     color: yellow;
     cursor: pointer;
 }
@@ -89,19 +92,29 @@
     margin-top: 10px;
 }
 #active {
-    background: rgb(138, 8, 84);
+    background: rgb(64, 156, 213);
     color: yellow;
 }
 /*Responsive navbar to small screens*/
-@media (max-width: 700px){
-    .Title img, .Title h3{
+@media (max-width: 830px){
+    /*Hide languages text and icons*/
+    .Title #icon, .Title h3{
         display: none;
     }
     .Title{
-        grid-template-columns: auto;
+        grid-template-columns: auto 100px;
     }
-    .openclosenav{
+    .navDropdown{
         display: grid;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        align-self: center;
+        justify-self: flex-end;
+        margin-right: 10%;
+        width: 30%;
+        height: 50%;
     }
     .navBar{
         overflow-x: hidden;
@@ -109,8 +122,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(99, 6, 60);
-        box-shadow: 0px 15px rgb(138, 8, 84);
+        background-color: black;
+        box-shadow: 0px 15px rgb(64, 156, 213);;
     }
     .navButton{
         display: flex;
@@ -121,7 +134,7 @@
     }
     .navButton:hover {
         width: 100vw;
-        background: rgb(138, 8, 84);
+        background: rgb(64, 156, 213);;
         color: yellow;
         cursor: pointer;
     }
