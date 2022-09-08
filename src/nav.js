@@ -6,5 +6,10 @@ $(document).ready(function(){
             $(".navBar").slideUp("slow");
         }    
     });
-
+    // ajdust margins when page size changes (ie rotate mobile device)
+$(window).resize(function() {
+    if($(".navBar").first().is(":hidden")){
+        $(".navBar").slideDown();
+    } 
+  });
 });
