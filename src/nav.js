@@ -1,9 +1,10 @@
 $(document).ready(function(){
-    //Check to see if on mobile view and if so hide the nav bar
+    //Slideup navbar on mobile by default
     if (window.innerWidth < 830){
         $(".navBar").slideUp();
     }
 
+    //Functionality for clicking nav button
     $(".navDropdown").click(function(){
         if($(".navBar").first().is(":hidden")){
             $(".navBar").slideDown("slow");
@@ -12,13 +13,13 @@ $(document).ready(function(){
         }    
     });
     // ajdust margins when page size changes (ie rotate mobile device)
-$(window).resize(function() {
-    if (window.innerWidth < 830){
-        $(".navBar").slideUp();
-    } else {
-        if($(".navBar").first().is(":hidden")){
-            $(".navBar").slideDown();
+    $(window).resize(function() {
+        if (window.innerWidth < 830){
+            $(".navBar").slideUp();
+        } else {
+            if($(".navBar").first().is(":hidden")){
+                $(".navBar").slideDown();
+            }
         }
-    }
-  });
+    });
 });
