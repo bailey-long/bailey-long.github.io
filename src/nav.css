@@ -98,13 +98,14 @@
 
 /*Responsive navbar on small screens*/
 @media (max-width: 830px){
-    /*Hide languages text and icons*/
+    /*Hide language icons and text.*/
     .Title #icon, .Title h3{
         display: none;
     }
     .Title{
         grid-template-columns: auto 100px;
     }
+    /*Align the dropdown icon for mobile view*/
     .navDropdown{
         display: grid;
         grid-row-start: 1;
