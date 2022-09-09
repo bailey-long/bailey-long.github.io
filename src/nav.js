@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    //Check to see if on mobile view and if so hide the nav bar
+    if (window.innerWidth < 830){
+        $(".navBar").slideUp();
+    }
+
     $(".navDropdown").click(function(){
         if($(".navBar").first().is(":hidden")){
             $(".navBar").slideDown("slow");
