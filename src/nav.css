@@ -1,3 +1,4 @@
+/*ANCHOR Hide the navigation bar toggle on large screen*/
 .openclosenav{
     display: none;
 }
@@ -6,7 +7,7 @@
     display: grid;
     grid-template-columns: auto max-content 90px 90px 90px 90px 100px;
     align-items: center;
-    background: rgb(64, 156, 213);
+    background: rgb(0, 156, 253);
 }
 .Title h2, .Title h3{
     margin: 0;
@@ -34,32 +35,31 @@
     /*Hide nav dropdown by default*/
     display: none;
 }
-/*TODO rename all .navimage to .titleimage and update the html classes to match*/
-.navimg1{
+.titleimg1{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 3;
     grid-column-end: 3;
 }
-.navimg2{
+.titleimg2{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 4;
     grid-column-end: 4;
 }
-.navimg3{
+.titleimg3{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 5;
     grid-column-end: 5;
 }
-.navimg4{
+.titleimg4{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 6;
     grid-column-end: 6;
 }
-.navimg5{
+.titleimg5{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 7;
@@ -82,7 +82,7 @@
     padding-right:8px;
 }
 .navButton:hover {
-    background: rgb(64, 156, 213);
+    background: rgb(0, 156, 253);
     color: yellow;
     cursor: pointer;
 }
@@ -92,10 +92,11 @@
     margin-top: 10px;
 }
 #active {
-    background: rgb(64, 156, 213);
+    background: rgb(0, 156, 253);
     color: yellow;
 }
-/*Responsive navbar to small screens*/
+
+/*Responsive navbar on small screens*/
 @media (max-width: 830px){
     /*Hide languages text and icons*/
     .Title #icon, .Title h3{
@@ -123,7 +124,7 @@
         justify-content: center;
         align-items: center;
         background-color: black;
-        box-shadow: 0px 15px rgb(64, 156, 213);;
+        box-shadow: 0px 15px rgb(0, 156, 253);
     }
     .navButton{
         display: flex;
@@ -134,7 +135,7 @@
     }
     .navButton:hover {
         width: 100vw;
-        background: rgb(64, 156, 213);;
+        background: rgb(0, 156, 253);
         color: yellow;
         cursor: pointer;
     }

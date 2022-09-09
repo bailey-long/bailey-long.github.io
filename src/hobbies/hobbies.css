@@ -1,0 +1,63 @@
+.spacer{
+    margin-top: 5%;
+}
+/*Hobby One*/
+.OSRS{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.OSRS img{
+    justify-self: flex-end;
+    width: 25%;
+    height: 25%;
+    border-radius: 15px;
+    border: 4px solid black;
+}
+/*Hobby Two*/
+.MTG{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.MTG img{
+    justify-self: flex-start;
+    width: 25%;
+    height: 25%;
+    border-radius: 15px;
+    border: 4px solid black;
+}
+/*Hobby Three*/
+.DND{   
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.DND img{
+    justify-self: flex-start;
+    width: 25%;
+    height: 25%;
+    border-radius: 15px;
+    border: 4px solid black;
+}
+/*Hobby Four*/
+.Music{  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Music img{ 
+    justify-self: flex-end;
+    width: 25%;
+    height: 25%;
+    border-radius: 15px;
+    border: 4px solid black;
+}
+.text{
+    justify-self: flex-start;
+    width: 50%;
+}
