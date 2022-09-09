@@ -118,7 +118,7 @@
     }
     .navBar{
         overflow-x: hidden;
-        display: flex;
+        display: hidden;
         flex-direction: column;
         justify-content: center;
         align-items: center;

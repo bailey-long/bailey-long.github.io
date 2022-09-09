@@ -8,8 +8,12 @@ $(document).ready(function(){
     });
     // ajdust margins when page size changes (ie rotate mobile device)
 $(window).resize(function() {
-    if($(".navBar").first().is(":hidden")){
-        $(".navBar").slideDown();
-    } 
+    if (window.innerWidth < 830){
+        $(".navBar").slideUp();
+    } else {
+        if($(".navBar").first().is(":hidden")){
+            $(".navBar").slideDown();
+        }
+    }
   });
 });
