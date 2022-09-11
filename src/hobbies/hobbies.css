@@ -5,6 +5,9 @@
     justify-self: flex-start;
     width: 50%;
 }
+.hobbyGallery{
+    overflow-x: hidden;
+}
 .hobbyGallery img{
     width: 25%;
     height: 25%;
@@ -17,31 +20,25 @@
 #rightAlign{
     justify-self: flex-end;
 }
-/*Hobby One*/
-.OSRS{
+.flexLeft{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
 }
-/*Hobby Two*/
-.MTG{
+.flexRight{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
-/*Hobby Three*/
-.DND{   
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
+.content{
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
 }
-/*Hobby Four*/
-.Music{  
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.content:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.content.show{
+    transform: translateX(0);
 }
