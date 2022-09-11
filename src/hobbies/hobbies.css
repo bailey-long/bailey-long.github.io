@@ -34,7 +34,7 @@
 }
 .content{
     transform: translateX(400%);
-    transition: transform 0.4s ease;
+    transition: transform 0.7s ease;
 }
 .content:nth-of-type(even){
     transform: translateX(-400%);
