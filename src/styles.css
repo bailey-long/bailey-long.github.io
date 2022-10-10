@@ -2,13 +2,35 @@ body{
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
     margin: 0;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+}
+footer{
+    width: 100%;
+    margin-top: 10px;
+    background-color: lightgrey;
+}
+footer p{
+    padding-top: 10px;
+    margin: 0;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.blurb{
+    display: flex;
+    width: 10%;
+}
 /*Responsive text large screen => small screen*/
 @media (min-width: 1100px) {
     .bodyText{
         font-size: 100%;
         margin-left: 1rem;
         margin-right: 50%;
-        text-align: justify;
     }
 }
 @media (max-width: 750px){
@@ -17,5 +39,5 @@ body{
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 5%;
-    }   
+    }  
 }

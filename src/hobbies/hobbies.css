@@ -1,9 +1,12 @@
+.container{
+    min-height: 25vh;
+}
 .spacer{
     margin-top: 5%;
 }
 .text{
     justify-self: flex-start;
-    width: 50%;
+    width: 65%;
 }
 .hobbyGallery{
     overflow-x: hidden;

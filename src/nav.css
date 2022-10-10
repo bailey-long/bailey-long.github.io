@@ -83,7 +83,6 @@
 }
 .navButton:hover {
     background: steelblue;
-    color: yellow;
     cursor: pointer;
 }
 .navBar img{
@@ -93,7 +92,6 @@
 }
 #active {
     background: steelblue;
-    color: yellow;
 }
 
 /*Responsive navbar on small screens*/
@@ -137,7 +135,6 @@
     .navButton:hover {
         width: 100vw;
         background: steelblue;
-        color: yellow;
         cursor: pointer;
     }
     #active{
