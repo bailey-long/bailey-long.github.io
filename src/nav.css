@@ -1,4 +1,10 @@
 /*ANCHOR Hide the navigation bar toggle on large screen*/
+:root{
+    --banner-color: #5762d5;
+    --nav-bar-color: #303141;
+    --hover-color: #4750ae;
+    --active-color: #5762d5;
+}
 .openclosenav{
     display: none;
 }
@@ -7,7 +13,7 @@
     display: grid;
     grid-template-columns: auto max-content 90px 90px 90px 90px 100px;
     align-items: center;
-    background: steelblue
+    background-color: var(--banner-color);
 }
 .Title h2, .Title h3{
     margin: 0;
@@ -67,7 +73,7 @@
 }
 .navBar{
     display: flex;
-    background-color: rgb(0, 0, 0);
+    background-color: #303141;
 }
 .navBar a{
     color: inherit;  /*blue colors for links too */
@@ -80,20 +86,23 @@
     display: inline-flex;
     padding-left:8px;
     padding-right:8px;
+    transition: background-color 0.3s;
+    background-color: var(--nav-bar-color);
 }
 .navButton:hover {
-    background: steelblue;
+    transition: background-color 0.3s;
+    background-color: var(--hover-color);
     cursor: pointer;
+}
+#active {
+    transition: background-color 0.3s;
+    background-color: var(--active-color);
 }
 .navBar img{
     width: 120px;
     height: 40px;
     margin-top: 10px;
 }
-#active {
-    background: steelblue;
-}
-
 /*Responsive navbar on small screens*/
 @media (max-width: 830px){
     /*Hide language icons and text.*/
@@ -118,12 +127,12 @@
     }
     .navBar{
         overflow-x: hidden;
-        display: hidden;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: black;
-        box-shadow: 0px 15px steelblue;
+        box-shadow: 0px 15px var(--active-color);
+        height: 286.133px;
+        transition: 0.2s ease;
     }
     .navButton{
         display: flex;
@@ -134,7 +143,6 @@
     }
     .navButton:hover {
         width: 100vw;
-        background: steelblue;
         cursor: pointer;
     }
     #active{
@@ -144,5 +152,8 @@
         width: 120px;
         height: 40px;
         margin-top: 10px;
+    }
+    .hide{
+        height: 0px;
     }
 }

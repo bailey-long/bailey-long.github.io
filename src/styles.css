@@ -2,11 +2,10 @@ body{
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
     margin: 0;
 }
-.container{
+.footerContainer{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 100vh;
+    flex-direction: row;
+    min-height: 100%;
 }
 footer{
     width: 100%;
