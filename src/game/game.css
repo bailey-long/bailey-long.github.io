@@ -1,5 +1,5 @@
 .container{
-    min-height: 60vh;
+    min-height: 80vh;
 }
 .content{
     padding-top: 1rem;
@@ -19,6 +19,8 @@
     margin-bottom: 10px;
 }
 .inventory{
+    margin-top: 5rem;
+    margin-bottom: 15rem;
     bottom: 0;
     width: 100%;
 }

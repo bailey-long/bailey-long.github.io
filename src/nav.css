@@ -90,12 +90,12 @@
     background-color: var(--nav-bar-color);
 }
 .navButton:hover {
-    transition: background-color 0.3s;
+    transition: 0.3s;
     background-color: var(--hover-color);
     cursor: pointer;
 }
 #active {
-    transition: background-color 0.3s;
+    transition: 0.3s;
     background-color: var(--active-color);
 }
 .navBar img{

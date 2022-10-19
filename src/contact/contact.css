@@ -13,9 +13,37 @@ input{
     justify-content: center;
 }
 .contactForm{
-    align-content: space-around;
     justify-content: space-around;
 }
 .contactForm input{
+    margin-top: 1rem;
+    width: 12vw;
     display: flex;
+}
+#message{
+    margin-top: 1rem;
+    width: 80vw;
+    height: 20vh;
+    resize: none;
+}
+label[for="message"]{
+    display: none;
+}
+.align{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*Resize for mobile*/
+@media (max-width: 750px){
+    .content{
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .contactForm input{
+        width: 80vw;
+    }
+    #message{
+        width: 80vw;
+    }
 }

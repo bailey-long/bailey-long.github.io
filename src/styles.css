@@ -1,21 +1,43 @@
+:root{
+    --banner-color: #5762d5;
+    --nav-bar-color: #303141;
+    --hover-color: #4750ae;
+    --active-color: #5762d5;
+}
 body{
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
     margin: 0;
 }
+/*footer*/
 .footerContainer{
+    color: white;
     display: flex;
     flex-direction: row;
-    min-height: 100%;
+    height: 26.8rem;
+}
+.footerContainer h3{
+    text-decoration: underline;
+}
+.footerContainer a{
+    color: white;
+    text-decoration: none;
+}
+.footerContainer a:hover{
+    color: var(--hover-color);
 }
 footer{
     width: 100%;
     margin-top: 10px;
-    background-color: lightgrey;
+    background-color: var(--active-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 footer p{
     padding-top: 10px;
     margin: 0;
 }
+/*end footer*/
 .links{
     display: flex;
     flex-direction: column;
