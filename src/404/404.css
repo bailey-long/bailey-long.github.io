@@ -20,3 +20,13 @@ html{
     margin-top: 20px;
     margin-right: 20%;
 }
+/*Mobile view*/
+@media (max-width: 750px){
+    html{
+        font-size: small;
+        text-align: left;
+    } 
+    .randomFact{
+        text-align:left;
+    }
+}

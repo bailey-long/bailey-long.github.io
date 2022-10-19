@@ -1,4 +1,5 @@
 input{
+    margin-right: 1rem;
     border-radius: 5px;
     padding: 5px;
 }
@@ -26,6 +27,12 @@ input{
     height: 20vh;
     resize: none;
 }
+label{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: flex;
+}
+/*Hidden by default on desktop view*/
 label[for="message"]{
     display: none;
 }
@@ -45,5 +52,8 @@ label[for="message"]{
     }
     #message{
         width: 80vw;
+    }
+    label[for="message"]{
+        display: block;
     }
 }
