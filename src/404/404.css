@@ -1,3 +1,8 @@
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .generateFact{
     width: 300px;
     height: 100px;
