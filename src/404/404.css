@@ -1,0 +1,15 @@
+.generateFact{
+    width: 300px;
+    height: 100px;
+    background-color: steelblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+.randomFact{
+font-size: large;
+margin-top: 20px;
+}
