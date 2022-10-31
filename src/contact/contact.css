@@ -1,3 +1,10 @@
+:root{
+    --banner-color: #5762d5;
+    --nav-bar-color: #303141;
+    --hover-color: #4750ae;
+    --active-color: #5762d5;
+}
+
 input{
     margin-right: 1rem;
     border-radius: 5px;
@@ -7,7 +14,7 @@ input{
     border-radius: 10px;
     padding: 1rem;
     margin: 8rem 8rem 8rem 8rem;
-    background-color: wheat;
+    background-color: var(--active-color);
 }
 .contact{
     display: flex;
