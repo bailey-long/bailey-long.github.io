@@ -14,7 +14,7 @@ input{
     border-radius: 10px;
     padding: 1rem;
     margin: 8rem 8rem 8rem 8rem;
-    background-color: var(--active-color);
+    background-color: var(--banner-color);
 }
 .contact{
     display: flex;
