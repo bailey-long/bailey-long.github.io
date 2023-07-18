@@ -40,18 +40,16 @@
             <h1>Send me an email!</h1>
             <div class="contact">
                 <div class="contactForm">
-                    <form>
+                    <form action="mailto:fivebailey2@gmail.com" method="post" enctype="text/plain">
                         <div class="align">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your name..">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Your email..">     
+                        <input type="text" id="name" name="sname" placeholder="Your name..">     
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject..">
+                        <input type="text" id="subject" name="ssubject" placeholder="Subject..">
                         <label for="message">Message:</label><br>
                         <textarea id="message" name="message" placeholder="Write something.."></textarea>
                         <!--Button takes user to a 404 page due to email system not being setup yet-->
-                        <a href="/src/404/404.html"><input type="button" value="Submit"></a>
+                        <input type="button" value="Send">
                         </div>
                     </form>
                 </div>
