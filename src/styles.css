@@ -4,10 +4,12 @@
     --hover-color: #4750ae;
     --active-color: #5762d5;
 }
+html {
+    overscroll-behavior: none;
+}
 body{
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
     margin: 0;
-    overscroll-behavior-y: none;
 }
 /*footer*/
 .footerContainer{
@@ -47,12 +49,27 @@ footer p{
     display: flex;
     width: 10%;
 }
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    text-align: center;
+}
+.copyright img{
+    width: 300px;
+    height: 100px;
+}
 /*Responsive text large screen => small screen*/
 @media (min-width: 1100px) {
     .bodyText{
         font-size: 100%;
         margin-left: 1rem;
         margin-right: 50%;
+    }
+    .copyright img{
+        width: 300px;
+        height: 100px;
     }
 }
 @media (max-width: 750px){
@@ -62,4 +79,8 @@ footer p{
         margin-right: 1rem;
         margin-top: 5%;
     }  
+    .copyright img{
+        width: 150px;
+        height: 50px;
+    }
 }

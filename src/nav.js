@@ -17,6 +17,9 @@ document.getElementsByClassName("footerContainer")[0].innerHTML = `
     <a href="/src/hobbies/hobbies.html"><p>Hobbies</p></a>
     <a href="/src/game/game.html"><p>Top Secret</p></a>
 </div>
-<div class="copyright"><p>© 2022 Bailey Long</p></div>
+<div class="copyright">
+<img src="/public/xorn.jpg" alt="image of awesome wizard casting spell">
+<p>© 2022 Bailey Long</p>
+</div>
 </footer>
 `
