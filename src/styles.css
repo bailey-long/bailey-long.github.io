@@ -1,8 +1,8 @@
 :root{
-    --banner-color: #5762d5;
-    --nav-bar-color: #303141;
-    --hover-color: #4750ae;
-    --active-color: #5762d5;
+    --banner-color: #003B73;
+    --nav-bar-color:#60A3D9 ;
+    --hover-color: #0074B7;
+    --active-color:#8fbde8;
 }
 html {
     overscroll-behavior: none;
