@@ -16,7 +16,7 @@ body{
     color: white;
     display: flex;
     flex-direction: row;
-    height: 26.8rem;
+    height: 20rem;
 }
 .footerContainer h3{
     text-decoration: underline;

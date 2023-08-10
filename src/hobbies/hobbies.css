@@ -12,9 +12,9 @@
     overflow-x: hidden;
 }
 .hobbyGallery img{
-    width: 25%;
-    height: 25%;
-    border-radius: 15px;
+    width: 25vw;
+    height: 40vh;
+    border-radius: 10px;
     border: 4px solid black;
 }
 #leftAlign{
@@ -44,4 +44,17 @@
 }
 .content.show{
     transform: translateX(0);
+}
+/*Responsive images*/
+@media (max-width: 750px){
+    .hobbyGallery{
+        font-size: small;
+        overflow-x: hidden;
+    }
+    .hobbyGallery img{
+        width: 25vw;
+        height: 15vh;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
 }
