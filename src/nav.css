@@ -2,7 +2,7 @@
 :root{
     --banner-color: #3B4754;
     --nav-bar-color:#74112F;
-    --hover-color: #5c1429;
+    --hover-color: #000000;
     --active-color:#A5A9B3;
 }
 .openclosenav{
@@ -16,6 +16,7 @@
     background-color: var(--banner-color);
 }
 .Title h2, .Title h3{
+    padding-left: 10px;
     margin: 0;
     font-family: inherit;
     color: #fefefe;
@@ -73,7 +74,7 @@
 }
 .navBar{
     display: flex;
-    background-color: var(--hover-color);
+    background-color: var(--nav-bar-color);
 }
 .navBar a{
     color: inherit;  /*blue colors for links too */
