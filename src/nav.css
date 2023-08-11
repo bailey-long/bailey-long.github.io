@@ -1,9 +1,9 @@
 /*ANCHOR Hide the navigation bar toggle on large screen*/
 :root{
-    --banner-color: #003B73;
-    --nav-bar-color:#60A3D9 ;
-    --hover-color: #0074B7;
-    --active-color:#8fbde8;
+    --banner-color: #3B4754;
+    --nav-bar-color:#74112F;
+    --hover-color: #5c1429;
+    --active-color:#A5A9B3;
 }
 .openclosenav{
     display: none;

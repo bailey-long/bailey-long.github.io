@@ -8,6 +8,7 @@ input{
     padding: 1rem;
     margin: 8rem 8rem 8rem 8rem;
     background-color: var(--hover-color);
+    color: white;
 }
 .contact{
     display: flex;
@@ -15,6 +16,7 @@ input{
 }
 .contactForm{
     justify-content: space-around;
+    color: white;
 }
 .contactForm input{
     margin-top: 1rem;
