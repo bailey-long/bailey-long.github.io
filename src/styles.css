@@ -2,7 +2,6 @@ html {
     overscroll-behavior: none;
 }
 body{
-    background-image: url("/public/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
