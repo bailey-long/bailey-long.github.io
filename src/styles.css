@@ -31,10 +31,14 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
 }
 footer p{
     padding-top: 10px;
     margin: 0;
+}
+footer p:hover{
+    background-color: var(--active-color);
 }
 /*end footer*/
 .links{

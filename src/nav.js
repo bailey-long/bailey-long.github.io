@@ -19,6 +19,7 @@ document.getElementsByClassName("footerContainer")[0].innerHTML = `
 </div>
 <div class="copyright">
 <img src="/public/xorn.jpg" alt="image of awesome wizard casting spell">
+<p>Awesome wizard casting spell, <br />image not by me just thought it looks cool</p> <br  />
 <p>© 2022 Bailey Long</p>
 </div>
 </footer>

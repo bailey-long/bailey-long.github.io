@@ -2,8 +2,8 @@
 :root{
     --banner-color: #3B4754;
     --nav-bar-color:#74112F;
-    --hover-color: #000000;
-    --active-color:#A5A9B3;
+    --hover-color: #450719;
+    --active-color:#c62756;
 }
 .openclosenav{
     display: none;
